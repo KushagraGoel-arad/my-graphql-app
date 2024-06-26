@@ -9,4 +9,5 @@ function MyApp({ Component, pageProps }) {
     </ApolloProvider>
   );
 }
+
 export default MyApp;
