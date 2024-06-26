@@ -1,4 +1,4 @@
-
+"use client";
 import React from 'react';
 import BookForm from '../components/BookForm.js'
 import Authors from '../pages/authors';
@@ -8,9 +8,9 @@ const HomePage = () => {
   return (
     <div>
       <h1>Welcome to My GraphQL App</h1>
-      {/* <BookForm book={undefined} /> */}
+      <BookForm book={undefined} />
       <Authors />
-      {/* <Books /> */}
+      <Books />
     </div>
   );
 };

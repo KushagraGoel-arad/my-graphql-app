@@ -9,9 +9,9 @@ const BookForm = ({ book }) => {
   const [publishedDate, setPublishedDate] = useState(book ? book.published_date : '');
   const [authorId, setAuthorId] = useState(book ? book.author_id : '');
 
-  // const [createBook] = useMutation(CREATE_BOOK, {
-  //   refetchQueries: [{ query: GET_BOOKS }],
-  // });
+  const [createBook] = useMutation(CREATE_BOOK, {
+    refetchQueries: [{ query: GET_BOOKS }],
+  });
 
   const [updateBook] = useMutation(UPDATE_BOOK, {
     refetchQueries: [{ query: GET_BOOKS }],
